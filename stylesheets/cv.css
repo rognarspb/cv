@@ -1,0 +1,107 @@
+html {
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+header{
+    position:  fixed;
+    width: 30%;
+}
+section{
+    margin-left: 30%;
+}
+
+.title{
+    padding: 20px;
+    background: #efefef;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+h1.title__hdr {
+    font-family: monospace;
+    margin: 10px 0 10px 0;
+}
+
+
+.title__desc{
+    font-size: 14pt;
+}
+
+.title__img{
+    margin: 0 auto;
+}
+
+.title__img img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+section {
+    padding: 10px;
+    border: 2px dotted lightslategray;
+    margin-bottom: 10px;
+}
+
+section h2{
+    font-family: monospace;
+    font-size: 18pt;
+    color: #5f5f5f;
+    margin: 5px 0 5px 0;
+}
+
+section p, div, ul {
+    font-family: monospace;
+    font-size: 10pt;
+}      
+section ul{
+    color: #5f5f5f;
+}
+
+.important {
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+}
+
+address{
+    margin: 5px 0 5px 0;
+}
+
+.education_hdr {
+    margin: 10px 0 10px 0;
+}
+.education__hdr__years{
+    color: #7368af;
+    display: inline-block;
+    font-size: large;
+}
+
+.projects h3 {
+    text-transform: uppercase;
+}
+.projects h3:before {
+    content: "> ";
+    color: #7368af;
+}
+
+.project__type {
+    color: #7368af;
+    font-size: normal;
+}
+.project__description{
+    margin-top: 10px;
+    padding: 10px;
+    background: #efefef;
+    border-radius: 8px;
+}
+.project__tools{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: large;
+    color: #9f9f9f;
+}
