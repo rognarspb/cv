@@ -3,95 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Curriculum Vitae - Pavel Stepanov</title>
+    <title>Pavel Stepanov</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="stylesheets/cv.css">
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <style>
-      html {
-        font-size: 14px;
-      }
-      @media (min-width: 768px) {
-        html {
-          font-size: 16px;
-        }
-      }
-      
-      h1 {
-        font-family: monospace;
-      }
-
-      h1 small{
-        font-size: 16px;
-      }
-      
-      section {
-        padding: 10px;
-        border: 2px dotted lightslategray;
-        margin-bottom: 10px;
-      }
-
-      section h2{
-        font-family: monospace;
-        font-size: 18pt;
-        color: #5f5f5f;
-        margin: 5px 0 5px 0;
-      }
-
-      section p, div, ul {
-        font-family: monospace;
-        font-size: 10pt;
-      }      
-      section ul{
-        color: #5f5f5f;
-      }
-
-      .important {
-        font-weight: bold;
-        padding: 4px 0 4px 0;
-      }
-
-      address{
-        margin: 5px 0 5px 0;
-      }
-
-      .education_hdr {
-          margin: 10px 0 10px 0;
-      }
-      .education_years{
-          color: darkblue;
-      }
-
-      .project__type {
-        color: darkblue;
-        font-size: normal;
-      }
-      .project__description{
-        margin-top: 10px;
-        padding: 10px;
-        background: #efefef;
-        border-radius: 8px;
-      }
-      .project__tools{
-        margin-top: 10px;
-        margin-bottom: 20px;
-        font-size: large;
-        color: #9f9f9f;
-      }
     </style>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Pavel Stepanov<br/><small>Senior software engineer</small></h1>
+        <div class="title">
+          <!-- <div class="title__img"><img src="img/photo.jpg" alt="Avatar"></div> -->
+          <h1 class="title__hdr">Pavel Stepanov</h1>
+          <div class="title__desc">Senior software engineer</div>
+          <div><small>CV/Resume information</small></div>
+        </div>
       </header>
       <section>
         <h2>CONTACT:</h2>
-        <div class="important"><a href="mailto:ipmonk@mail.ru">ipmonk@mail.ru</a></div>
+        <div class="important"><a href="mailto:stepanov@nordwestsoft.com">stepanov@nordwestsoft.com</a></div>
         <div>Phone: +7(812)2970345 (home), +7(921)7569592 (cellular)</div>
         <address>
           2-nd Murinsky av. 51-191<br/>
@@ -110,13 +46,12 @@
         <p>Programming languages: <b>C#, C/C++, Javascript</b></p>
         <p>Other Tools/Technologies/Languages:  
         <ul>
-          <li>ASP.NET MVC, ASP.NET Core MVC, Entity Framework (EF), EF Core</li>
           <li>Vue.JS, Knockout.JS, JQuery, D3js</li>
+          <li>ASP.NET MVC, ASP.NET Core MVC, Entity Framework (EF), EF Core</li>
           <li>HTML, CSS, SASS, JSON, XML</li>
           <li>Oracle DB, PostgreSQL, SQLite, MSSQL </li>
           <li>Win32 API, Windows Forms, WPF, XAML</li>
-          <li>Autodesk AutoCAD, ARX SDK, DWGDirect</li>
-          <li>Boost, STL</li>
+          <li>Autodesk AutoCAD, ARX SDK</li>
           <li>GIT, SVN, StarTeam, TFS</li>
         </ul>
         </p>
@@ -124,7 +59,7 @@
       <section>
         <h2>SKILLS AND EXPERIENCE:</h2>
         <ul>
-          <li>5+ year of experience in the development of web front-end  and back-end applications</li>
+          <li>5+ year of experience in the development of web front-end (Vue) and back-end applications (ASP.NET)</li>
           <li>5+ years of experience in the development of end-user windows UI applications</li>
           <li>2+ years of experience in the development of CAD/CAD graphics related and Pocket PC related software</li>
           <li>2.5 years of experience in the development of windows kernel/driver/filter software</li>
@@ -133,8 +68,8 @@
       <section>
         <h2>EMPLOYMENT HISTORY</h2>
         <ul>
-        <li>2010-Present time NordWestSoft, St.Petersburg, Russia — Technical leader/Senior software engineer</li>
-        <li>2007-2010 - Automated Intelligence Systems (AIS), St.Petersburg, Russia – Senior software engineer</li>
+        <li>2010 - Present time NordWestSoft, St.Petersburg, Russia — Technical leader/Senior software engineer</li>
+        <li>2007 - 2010 - Automated Intelligence Systems (AIS), St.Petersburg, Russia – Senior software engineer</li>
         <li>11/2003 – 2007 – SoftDev SPb, St.Petersburg, Russia — Project technical leader</li>
         <li>12/2002 –  10/2003– SoftDev SPb, St.Petersburg, Russia — Senior software engineer</li>
         <li>2003, 2004 – Kandasoft inc. - temporary hired specialist</li>
@@ -144,43 +79,64 @@
       </section>
       <section>
         <h2>EDUCATION</h2>
-        <h3 class="education__hdr">Peter the Great St. Petersburg Polytechnic University </h3>
-        <div class="education_years">2001 - 2003</div>
+        <h3 class="education__hdr">
+          <span class="education__hdr__years">2001-2003: </span>
+          Peter the Great St. Petersburg Polytechnic University 
+        </h3>
+        
         <div>Applied Mathematics Master`s degree</div>
-        <div>Projects:</div>
+        <h4>Projects:</h4>
         <ul>
-          <li>Soliton simulation visualization project</li>
-          <li>Discovery v3.0 / Discovery v3.0 Database search plug-in.</li>
-          <li>Whip-n-Post converter/ DWG2DWF MS IE Pegasus converter / Discovery v3.0 Database searching plugin.</li>
-          <li>Zing! DWF file viewer v1.0 / Pocket Zing! DWF viewer</li>
+          <li>Soliton simulation visualization project (C++/C#/Open GL)</li>
+          <li>Discovery v3.0 / Discovery v3.0 Database search plug-in. (C++/Search engine)</li>
+          <li>Whip-n-Post converter/ DWG2DWF MS IE Pegasus converter / Discovery v3.0 Database searching plugin. (C++/ATL/MFC)</li>
+          <li>Zing! DWF file viewer v1.0 / Pocket Zing! DWF viewer (C++/MFC)</li>
         </ul>
-        <h3 class="education__hdr">Peter the Great St. Petersburg Polytechnic University </h3>
-        <div class="education_years">1997 - 2001</div>
+        <h3 class="education__hdr">
+          <span class="education__hdr__years">1997-2001: </span>
+          Peter the Great St. Petersburg Polytechnic University 
+        </h3>
+        
         <div>Applied Mathematics and Software Engineering Bachelor`s degree</div>
       </section>
-      <section>
+      <section class="projects">
         <h2>PROJECTS</h2>
-        <h3>Trives</h3>
-        <div class="project__type">ASP.NET Core based Single Page Application</div>
+        <h3>State Property Management Committee of Saint Petersburg portal</h3>
+        <div class="project__type">Multiple ASP.NET Core based web applications/Web API</div>
         <div class="project__description">
+          Development of public web site for State Property Management Committee of Saint Petersburg as well as private administrative web portal using separate Vue.js SPA applications/
+          Integration of miscellaneous government data sources and display them on web site using custom grid tables and visualizations. 
+          Web site development included tasks for news and document management, personal area access, document submission and signing using digital signature.
+        </div>
+        <div class="project__tools">ASP.NET Core | EntityFramework | Vue.js | JavaScript | Webpack | HTML/CSS | SCSS</div>
+
+        <h3>Trives</h3>
+        <div class="project__type">ASP.NET Core based Single Page Application/ Web API</div>
+        <div class="project__description">
+          Development of business process automation system for accepting orders for products, track order execution process and managing production states. 
+          Vue.js framework used as client side library, Web API methods used to perform business logic with data. 
+          An additional tasks of development was design of 3D editor for modification/manipulation of product specification data and ionsole models
         </div>
         <div class="project__tools">ASP.NET Core | EntityFramework | Vue.js | JavaScript | Webpack | HTML/CSS | SCSS</div>
 
         <h3>BookTrailer</h3>
-        <div class="project__type">ASP.NET Core Web Application</div>
+        <div class="project__type">ASP.NET MVC Application | Azure cloud services</div>
         <div class="project__description">
-          Azure Cloud computing based ASP.NET web application that allows customize video by choosing template, images, music, parts composition, preview result using in-browser 3D animation viewer, and order final video to render using Azure batch jobs.
-        
-        Development of web application designed for automatic generation of 3D scenes and production video trailers 
+          Development of Microsoft Azure  services and web application based on ASP.NET web application that allows customize automatic video creation by choosing  template, images, music, parts composition.
+          In addition web applicatrion allow preview of resulting high-definition vidoe using in-browser 3D animation viewer. 
+          Azure services were used to execute rendering of final high-definition video using user specific settings/codec/duration
         </div>
-        <div class="project__tools">Blend4Web | KnockoutJS | Microsoft Azure | ASP.NET MVC | Web API | EntityFramework | Javascript | HTML/CSS</div>
+        <div class="project__tools">Blend4Web | Knockout.JS | Microsoft Azure | ASP.NET MVC | Web API | EntityFramework | Javascript | HTML/CSS</div>
 
         <h3>CityInventory</h3>
-        <div class="project__type">ASP.NET MVC based web application</div>
+        <div class="project__type">ASP.NET MVC based web application / SOAP API</div>
         <div class="project__description">
-          Perform inventory of different types of city property. Massive web forms with multiple steps and input validation. Working with database to perform CRUD operations
+          Development of private enterprise web site for State Property Management Committee of Saint Petersburg to perform inventory of different types of city property.
+          Primary goal was to provide convinient way to enter and edit property specific data as well as order/sort and customize access to specifica data areas. 
+          Web site development included working with multiple data sources as well as integration with other government data providers using highly protected data channels.
+          Working on this project also assumed also development of visualization and miscellaneous representation of large data sources. 
         </div>
-        <div class="project__tools">ASP.NET MVC | EntityFramework | jQuery | JavaScript | HTML/CSS</div>
+        <div class="project__tools">ASP.NET MVC | EntityFramework | jQuery | JavaScript | HTML/CSS | Oracle DB</div>
 
         <h3>"Property Rights Protection" (PRP application)</h3> 
         <div class="project__type">ASP.NET MVC based web application</div>
@@ -188,19 +144,31 @@
         <div class="project__tools">ASP.NET MVC|Knockout.JS|EF (Code First)|Oracle DB</div>
 
         <h3>"State Service Requests"</h3> 
-        <div class="project__description">Information system for State Property Management Committee of Saint Petersburg (ASP.NET MVC, EF Code First, Oracle DB)
-        "Property of Saint Petersburg" 
-        Information System for government of Saint-Petersburg </div>
+        <div class="project__type">ASP.NET MVC web application / SOAP API</div>
+        <div class="project__description">
+          "Property of Saint Petersburg" Information System for government of Saint-Petersburg. Web-based application automates the functionality 
+          for accepting of applications for state services in State Unitary Enterprise "GUION" (Number of applications include real estate and land right registration, rent, and other operations).
+        </div>
         <div class="project__tools">ASP.NET MVC | EF Code First | Oracle DB | JQuery | Knockout.JS</div>
 
         <h3>NWS “Betomix” automation system</h3>  
-        .NET|C#|WPF
+        <div class="project__type">Windows WPF Application</div>
+        <div class="project__description">Development of integrated hardware and software automated concrete production control application. 
+          The systems installed provides reliable functioning of the plants, lessen the human factor influence and ensuring high quality and stable production results to deliver high-quality product to consumers</div>
+        <div class="project__tools">.NET|C#|WPF</div>
+        
 
         <h3>«Teplopol» automation system</h3>
-        <div class="project__description">Teplopol is system of plug-ins for Autodesk AutoCAD software </div>
+        <div class="project__type">Autodesk AutoCAD plugin</div>
+        <div class="project__description">Teplopol is system of plug-ins for Autodesk AutoCAD software. The system is used to create the heating, snowmelting, comfort temperature maintenance systems.  </div>
         <div class="project__tools">C++|ObjectARX SDK</div>
 
         <h3>Security monitoring and management system application for “St. Petersburg Information and Analytical Centre"” </h3>
+        <div class="project__type">ASP.NET MVC web application</div>
+        <div class="project__description">Software application and hardware devices that ensure the network security, keeping track of system administrator education (main education,
+           additional courses for infornmation security). This information database provides assistance in management decision-making process.
+            The system also works as a real-time monitor of current network consistency displaying the security alerts.
+          </div>
         <div class="project__tools">C#|WCF|ASP.NET MVC|JQuery|JQuery.UI</div>
 
         <h3>“Documents management system»</h3>
@@ -208,33 +176,43 @@
         <div class="project__tools">C#|Windows Forms|EF|Oracle DB</div>
 
         <h3>EggTop visual promotion web project </h3>
-        Web application 
+        <div class="project__type">ASP.NET MVC web application</div>
+        <div class="project__description"></div>
         <div class="project__tools">C#|ASP.NET MVC|EF, JS JQuey|MSSQL</div>
 
         <h3>AIS financial automation system </h3>
+        <div class="project__type">Multi-platform service/end-user application</div>
+        <div class="project__description">Developement of multi-platform (Linux/Windows) application designed for analyzing/view and management of exchange trading data flow and related services</div>
         <div class="project__tools">Qt|C++</div>
 
         <h3>Siberia project</h3>
-        Development of custom ARX/.Net plug-ins for Autodesk AutoCAD software
+        <div class="project__type">Autodesk AutoCAD plugin</div>
+        <div class="project__description">Development of custom ARX/.Net plug-ins for Autodesk AutoCAD software for managing specific building entities</div>
         <div class="project__tools">C++|ObjectARX SDK</div>
 
         <h3>ABS (Autodesk Building System) plug-in for ODA DWGDirect</h3>
-        Participation in development of ABS plug-in for ODA DWGDirect library
+        <div class="project__type">ODA DWGDirect plugin</div>
+        <div class="project__description">Participation in development of ABS plug-in for ODA DWGDirect library</div>
         <div class="project__tools">C++|Object ARX SDK|DWGDirect SDK</div>
 
         <h3>Membership Plus, versions 10.0-11.0, Facebook plugin for Membership Plus</h3>
+        <div class="project__type">Windows application</div>
+        <div class="project__description">Development for Windows application used to manage a small church or organization's membership, contribution and accounting records</div>
         <div class="project__tools">C#|Windows.Forms|Javascript</div>
 
         <h3>Sketcher Project (version 1.0)</h3>
+        <div class="project__type">Windows application</div>
         <div class="project__description">Custom corporate software for Russian Federal Government</div>
         <div class="project__tools">C++|MFC</div>
 
         <h3>QuickVerse 2005-2011 for Windows</h3>
+        <div class="project__type">Windows application</div>
         <div class="project__description">Development of several ersions of Biblical reference software programs  for Windows. Development of utility applications that provide STEP books library management. Participation in development of Facebook and Dropbox plugins for syncronizing and backup of book collections</div>
         <div class="project__tools">C#|Windows Forms</div>      
       </section>
       <footer>
       </footer>
+    </div>
     <script src="javascripts/scale.fix.js"></script>
     
   </body>
