@@ -7,12 +7,6 @@ html {
     }
 }
 
-
-header{
-}
-section{
-}
-
 .title{
     padding: 20px;
     background: #efefef;
@@ -55,7 +49,7 @@ section h2{
 section p, div, ul {
     font-family: monospace;
     font-size: 10pt;
-}      
+}
 section ul{
     color: #5f5f5f;
 }
@@ -69,7 +63,7 @@ address{
     margin: 5px 0 5px 0;
 }
 
-.education_hdr {
+.education__hdr {
     margin: 10px 0 10px 0;
 }
 .education__hdr__years{
