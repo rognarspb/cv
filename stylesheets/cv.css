@@ -33,6 +33,15 @@ h1.title__hdr {
     width: 150px;
 }
 
+.title__lang {
+    margin-top: 10px;
+}
+.title__btn {
+    padding: 3px;
+    background: #efefef;
+    border-radius: 4px;
+}
+
 section {
     padding: 10px;
     border: 2px dotted lightslategray;
